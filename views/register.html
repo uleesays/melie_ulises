@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <!-- Font Awesome Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Icons Google -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="/css/styles_register.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    
+</head>
+
+<body>
+
+
+    <header>
+
+        <section class="topBar">
+    
+    
+          <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo">
+    
+    
+    
+    
+          <div class="search_contenedor">
+          <span><input class="searchBar" type="text" placeholder="Buscar...">
+            <button><i class='fas fa-search'></i></button></span>  
+          </div>
+          
+    
+          <h2 class="compra"> <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</h2>
+    
+    
+        </section>
+    
+    
+    
+    
+        <nav class="navBar">
+    
+          <ul class="rightNav">
+    
+            <a href="">
+              <li>Ofertas</li>
+            </a>
+            <a href="">
+              <li>Tiendas Oficiales</li>
+            </a>
+            <a href="">
+              <li>Vender</li>
+            </a>
+            <a href="">
+              <li>Ayuda</li>
+            </a>
+    
+          </ul>
+    
+          <ul class="leftNav">
+    
+            <a href="">
+              <li><a href="http://localhost:3000/register" target="_blank">Creá tu cuenta <span class="material-icons">
+                contact_mail
+              </span></a></li>
+            </a>
+            <a href="">
+              <li><a href="http://localhost:3000/login" target="_blank">Ingresá <span class="material-icons">
+                login
+              </span></a>
+              </li>
+            </a>
+            <a href="">
+              <li>Mis Compras <span class="material-icons">
+                  shopping_basket
+                </span></li>
+            </a>
+    
+          </ul>
+    
+        </nav>
+    
+        <div class="hambContenedor">
+          <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+    
+
+
+    <main>
+        <form class="formularioDeRegistro" action="http://localhost:3000/">
+            <div class="firstColumn">
+                <h2>Datos Personales</h2>
+                <br>
+                <label for="nombre">Nombre:</label>
+                <br>
+                <br>
+                <input type="text" name="nombre" id="nombre" required>
+                <br>
+                <br>
+                <label for="apellido">Apellido:</label>
+                <br>
+                <br>
+                <input type="text" name="apellido" id="apellido">
+                <br>
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <br>
+                <input type="email" name="email" id="email">
+                <br>
+                <br>
+                <label for="dob">Fecha de nacimiento:</label>
+                <br>
+                <br>
+                <input type="date" name="dob" id="dob">
+                <br>
+                <br>
+                <label for="domicilio">Domicilio:</label>
+                <br>
+                <br>
+                <input type="text" name="domicilio" id="domicilio">
+                <br>
+                <br>
+            </div>
+            <div class="secondColumn">
+                <h2>Perfil de usuario</h2>
+                <br>
+                <label>
+                    <label for="usuario">Nombre de usuario:</label>
+                    <br>
+                    <br>
+                    <input type="text" name="usuario" id="usuario">
+                    <br>
+                    <br>
+                    <label for="contrasena">Contraseña:</label>
+                    <br>
+                    <br>
+                    <input type="password" name="contrasena" id="contrasena">
+                    <br>
+                    <br>
+                    <label for="confirm">Confirmar contraseña:</label>
+                    <br>
+                    <br>
+                    <input type="password" name="confirm" id="confirm">
+                    <br>
+                    <br>
+                    <label for="usuario">Subi tu foto de perfil:</label>
+                    <br>
+                    <br>
+                    <input type="file" name="fotoDePerfil" multiple accept=".jpg, .png">
+                    <br>
+                    <br>
+
+
+
+                    ¿Que te gustaria hacer?
+                    <br>
+                    <br>
+                    <input type="radio" name="profile" value="buy">Comprar
+                    <input type="radio" name="profile" value="sell">Vender
+                </label>
+                <br>
+                <br>
+            </div>
+            <div class="thirdColumn">
+                <h2>Intereses</h2>
+                <br>
+                <label> ¿Cuáles son tus intereses?
+                    <br>
+                    <br>
+                    <input type="checkbox" name="interest" value="electro">Electro
+                    <input type="checkbox" name="interest" value="moda">Moda
+                    <input type="checkbox" name="interest" value="hogar">Hogar
+                    <br>
+                    <br>
+                    <input type="checkbox" name="interest" value="jugueteria">jugueteria
+                    <input type="checkbox" name="interest" value="vidaSana">Vida Sana
+                </label>
+                <br>
+                <br>
+                <br>
+                <br>
+                <label>
+                  <input onclick="test()" class="inputButtons" type="submit" value="Enviar">
+                    <input class="inputButtons" type="reset" value="Reset">
+                   
+                </label>
+
+
+
+            </div>
+
+
+
+        </form>
+        <script type="text/javascript" src="/js/minorTweaks.js"></script>
+    </main>
+</body>
+
+</html>

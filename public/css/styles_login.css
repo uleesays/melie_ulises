@@ -1,0 +1,32 @@
+body,
+main {
+    background-color: #EAC926;
+  margin: 0px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#login_contenedor {
+    display: inline-block;
+    border: 1px solid black; 
+    margin: 10px;
+    padding: 10px;
+    width: 50%;
+    margin-top: 50px;
+}
+
+label {
+    text-align: center;
+    
+}
+
+@media screen and (min-width: 769px) {
+
+    #login_contenedor {
+      
+        width: 20%;
+        
+    }
+
+}

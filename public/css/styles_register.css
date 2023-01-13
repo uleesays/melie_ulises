@@ -1,0 +1,56 @@
+body,
+main {
+    background-color: #EAC926;
+}
+
+
+.formularioDeRegistro {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #EAC926;
+    margin: 10px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+.secondColumn {
+
+    width: 200px;
+
+}
+
+.inputButtons {
+    text-align: center;
+    border-radius: 20px;
+    width: 90px;
+}
+
+#boton_ingresar:hover {
+    background-color: #0022AA;
+}
+
+@media screen and (max-width: 760px) {
+    .formularioDeRegistro {
+        grid-template-columns: 1fr 1fr;
+        background-color: #EAC926;
+        margin: 10px;
+        padding: 20px;
+      
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .formularioDeRegistro {
+        grid-template-columns: 1fr;
+        background-color: #EAC926;
+        margin: 10px;
+        padding: 20px;
+      
+        width: 100%px;
+    }
+
+}

@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.lower_footer {
+    text-align: center;
+}
+
+.search_contenedor {
+    text-align: center;
+    width: 85%;
+}
+
+
+
+
+header {
+    background-color: #EAC926;
+    padding: 20px;
+}
+
+header .fa-search {
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 2px;
+}
+
+header .navBar a {
+    text-decoration: none;
+    justify-content: left;
+}
+
+
+
+header .banner_contenedor .banner {
+    width: 100%;
+}
+
+header .navBar {
+   
+    display: none;
+
+}
+
+
+header .topBar .compra {
+    text-align: center;
+}
+
+header .topBar .logo {
+    width: 200px;
+}
+
+
+
+
+header .topBar .searchBar {
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 20px;
+    width: 50%;
+}
+
+header .topBar .compra {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+ header .hambContenedor .burger-menu {
+    display: inline-block;
+    background-color: #1259c3;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    max-width: 20%;
+    
+}
+
+
+header .hambContenedor {
+ text-align: center;
+} 
+
+header .navBar ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+main {
+    /* width: 90%;  */
+    background-color: #ebebeb;
+    grid-gap: 10%;
+    margin-left: 10px;
+}
+main .lastViewed {
+
+    width: 100%;
+}
+
+main .titulares {
+    font-size: 24px;
+}
+
+main .cards {
+    background-color: white;
+    width: 80%;
+    margin: 10px auto;
+}
+
+main .cards .top {
+    text-align: center;
+}
+
+main .cards .top .products {
+    width: 90%;
+}
+
+
+main .cards .bottom .flex {
+    display: flex;
+    border-bottom: 1px solid #ebebeb;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+main .cards .bottom .flex .fa-truck {
+    color: #39b54a;
+    align-self: flex-start;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+main .cards .bottom .flex .fa-truck:hover {
+    transform: rotate(-90deg);
+    transition: 2s
+}
+
+main .cards .bottom .priceAndDiscount .price,
+main .cards .bottom .priceAndDiscount .discount {
+
+    align-self: flex-end;
+    margin: 5px;
+
+}
+
+main .cards .bottom .priceAndDiscount .discount {
+    line-height: 115%;
+    color: #39b54a;
+}
+
+main .cards .bottom .description_container {
+
+    margin: 3px;
+}
+
+main .cards .bottom .priceAndDiscount {
+    display: inline-flex;
+    margin: 3px;
+}
+
+main .cards .bottom .priceAndDiscount .discount,
+main .cards .bottom .description_container .description {
+
+    font-size: 16px;
+}
+
+main .cards .bottom .description_container .description {
+    margin: 5px;
+    color: #666;
+    display: none;
+}
+
+main .cards .bottom .priceAndDiscount .price {
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer .footerIcons {
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer .mainText {
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+
+
+footer h3 {
+    margin-bottom: 0px;
+}
+
+
+
+
+
+/* Cuando pasa 361 activa = TABLET */
+@media screen and (min-width: 361px) {
+
+    .search_contenedor {
+        text-align: center;
+        width: 65%;
+    }
+
+    main .cards .bottom .description_container .description {
+        
+        color: white;
+    }
+
+    main .cards .bottom:hover  .description{
+        
+        color: black;
+    }
+
+    main .cards .bottom .description_container .description {
+        display: block;
+    }
+
+    header .navBar {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        margin-top: 15px;
+        align-items: center;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+
+    header .navBar .leftNav .material-icons {
+        font-size: 14px;
+    }
+
+    header .topBar {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navBar ul {
+        display: flex;
+    }
+
+    header .topBar .compra {
+        max-width: 350px;
+        text-align: right;
+    }
+
+    header .navBar li {
+        padding: 3px 0px;
+        color: #222222;
+        margin: 0px 5px;
+
+    }
+
+    header .hambContenedor {
+        display: none;
+    }
+
+    main .lastViewed {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main .offers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    main .cards {
+        width: 230px; /* cambiar por porcentajes */
+        max-width: 300px;
+
+        margin: 7px;
+    }
+
+}
+
+/* Cuando pasa 769 activa = DESKTOP*/
+
+@media screen and (min-width: 769px) {
+
+    .search_contenedor {
+        text-align: center;
+        width: 65%;
+    }
+
+    main .cards .bottom .description_container .description {
+        
+        color: white;
+    }
+
+    main .cards .bottom:hover  .description{
+        
+        color: black;
+    }
+
+
+
+    header .navBar,
+    header .topBar {
+        display: flex;
+        justify-content: space-between; 
+        margin: auto;
+        align-items: center;
+    }
+
+    header .navBar {
+        margin-top: 35px;
+        font-size: 16px;
+    }
+
+    header .navBar .leftNav .material-icons {
+        font-size: 16px;
+    }
+
+    header .hambContenedor {
+        display: none;
+    }
+
+    main .cards:hover {
+        box-shadow: 10px 15px 15px #949494;
+        margin: 8px;
+        transition: 0.2s;
+    }
+
+    main .lastViewed {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    main .offers {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+}
+
