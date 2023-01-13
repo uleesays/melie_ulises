@@ -2,6 +2,8 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+const port = process.env.PORT || 3001;
+
 //Public Path, in this case, __dirname is the complete route where app.js is located
 //permite servir archivos estaticos desde public
 const publicPath = path.resolve(__dirname, './public');
@@ -18,7 +20,7 @@ app.get('/register', (req, res) => {
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/login.html'));
 });
-app.listen(3000, () => console.log('Server running in port 3000...'));
+app.listen(port, () => console.log(`Server running in port ${port}`));
 
 
 
